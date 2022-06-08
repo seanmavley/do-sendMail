@@ -1,4 +1,4 @@
-const fetch = require("node-fetch")
+const fetch = require("node-fetch-commonjs")
 
 function main(args) {
   return fetch('https://functionschallenge.digitalocean.com/api/sammy', {
@@ -7,7 +7,7 @@ function main(args) {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      name: 'Sammy',
+      name: 'KhoPhi',
       type: 'xray',
     }),
   })
